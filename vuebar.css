@@ -1,0 +1,52 @@
+/*!
+ * Vuebar 0.0.20
+ *
+ * @link https://github.serafin.io/vuebar/
+ * @source git@github.com:DominikSerafin/vuebar.git
+ * @copyright (c) 2017-2020 Vuebar
+ * @license MIT
+ * https://github.com/DominikSerafin/vuebar/blob/master/LICENSE
+ */
+.vb > .vb-dragger {
+  z-index: 5;
+  width: 10px;
+  right: 0;
+}
+
+.vb > .vb-dragger > .vb-dragger-styler {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotate3d(0, 0, 0, 0);
+  transform: rotate3d(0, 0, 0, 0);
+  -webkit-transition: background-color 100ms ease-out, margin 100ms ease-out,
+    height 100ms ease-out;
+  transition: background-color 100ms ease-out, margin 100ms ease-out,
+    height 100ms ease-out;
+  background-color: transparent;
+  margin: 5px 5px 5px 0;
+  border-radius: 20px;
+  height: calc(100% - 10px);
+  display: block;
+}
+
+.vb.vb-in > .vb-dragger > .vb-dragger-styler {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.vb.vb-scrolling-phantom > .vb-dragger > .vb-dragger-styler {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.vb > .vb-dragger:hover > .vb-dragger-styler {
+  background-color: rgba(128, 128, 128, 0.5);
+  margin: 5px 4px 5px -1px;
+}
+
+.vb.vb-dragging > .vb-dragger > .vb-dragger-styler {
+  background-color: rgba(128, 128, 128, 0.7);
+  margin: 5px 4px 5px -1px;
+}
+
+.vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
+  background-color: rgba(128, 128, 128, 0.7);
+}

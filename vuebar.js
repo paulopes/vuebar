@@ -1,3 +1,12 @@
+/*!
+ * Vuebar 0.0.20
+ *
+ * @link https://github.serafin.io/vuebar/
+ * @source git@github.com:DominikSerafin/vuebar.git
+ * @copyright (c) 2017-2020 Vuebar
+ * @license MIT
+ * https://github.com/DominikSerafin/vuebar/blob/master/LICENSE
+ */
 /*----------------------------------------*\
     Vuebar
 \*----------------------------------------*/
